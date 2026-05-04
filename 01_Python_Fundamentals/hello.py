@@ -1,3 +1,4 @@
-#Method 2
+
 name = input("What's your name? ")
-print("Hello, ", name, sep="")
+address = input("where are you from?")
+print(f"Hello, {name} so you live in {address}?")
