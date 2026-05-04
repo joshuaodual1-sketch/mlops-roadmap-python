@@ -1,6 +1,3 @@
-#ouside quotes
+#Method 2
 name = input("What's your name? ")
-print("Hello,"  + name)
-#inside quotes
-name = input("What's your name? ")
-print("Hello, " + name)
+print("Hello, ", name, sep="")
