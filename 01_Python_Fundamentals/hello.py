@@ -1,7 +1,11 @@
-#formating of numbers
-x = float(input("Whats the vaule of x?"))
-y = float(input("Whats the vaule of y?"))
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
 
-z = x + y
 
-print(f"{z:,}")
+def square(n):
+    return n * n
+
+
+
+main()
