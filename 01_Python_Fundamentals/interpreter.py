@@ -1,17 +1,27 @@
-cal = input("Expression:" ).strip()
-x, y, z = cal.split()
-x1 = float(x)
-z1 = float(z)
+def main():
+    imp = input("Expression: ").strip()
+    answer = interpreter(imp)
+
+    print(f"{answer:.1f}")
 
 
-if y == "+":
-    result = x1 + z1
-elif y == "-":
-    result = x1 - z1
-elif y == "*":
-    result = x1 * z1
-elif y == "/":
-    result = x1 / z1
+def interpreter(cal):
+    x, y, z = cal.split()
 
 
-print(f"{result:.1f}")
+    new_x = float(x)
+    new_z = float(z);
+
+
+    match y:
+        case "+":
+            return new_x + new_z
+        case "-":
+            return new_x - new_z
+        case "*":
+            return new_x * new_z
+        case "/":
+            return new_x / new_z
+        
+if __name__ == "__main__":
+    main()
